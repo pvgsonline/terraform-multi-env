@@ -21,3 +21,6 @@ variable "common_tags" {
 variable "tags" {
   type = map
 }
+
+variable "environment"{
+  }

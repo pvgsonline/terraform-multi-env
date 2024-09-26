@@ -35,7 +35,7 @@ resource "aws_security_group" "allow_ssh_terraform" {
   }
 
     tags = {
-    Name = "allow_sshh_${environment}"
+    Name = "allow_sshh_${var.environment}"
   }
 
 }

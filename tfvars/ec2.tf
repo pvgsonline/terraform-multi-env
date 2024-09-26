@@ -15,7 +15,7 @@ resource "aws_instance" "terraform"{
     
 
 resource "aws_security_group" "allow_ssh_terraform" {
- name = "allow_sshh"    
+ name = "allow_sshh.${environment}"    
  description = "allows ssh traffic from port no 22"
 
  egress {
@@ -35,7 +35,7 @@ resource "aws_security_group" "allow_ssh_terraform" {
   }
 
     tags = {
-    Name = "allow_sshh"
+    Name = "allow_sshh.${environment}"
   }
 
 }
